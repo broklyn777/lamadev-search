@@ -7,11 +7,11 @@ import Table from "./Table";
 function App() {
 
   const [query, setQuery] = useState("");
-  const keysxxx = ["first_name", "last_name", "email"];
+  const keys = ["first_name", "last_name", "email"];
 
   const search = (data) => {
     return data.filter((item) => 
-keysxxx.some(key=>item[key].toLowerCase().includes(query))
+keys.some(key=>item[key].toLowerCase().includes(query))
     ) 
   };
   // const [query, setQuery] = useState("");
